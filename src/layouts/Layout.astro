@@ -251,7 +251,7 @@ const breadcrumbSchema =
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={product ? productTitle : title}/>
     <meta name="twitter:description" content={product ? productDescription : description} />
-    <meta name="twitter:image" content={ product ? fullProductImage : `${import.meta.env.BASE_URL}open_graph.webp` } />
+    <meta name="twitter:image" content={ product ? fullProductImage : `${siteUrl}open_graph.webp` } />
     <meta name="twitter:image:alt" content={product?.name ?? title} /> 
     <!-- MOBILE / BROWSER -->
     <meta name="mobile-web-app-capable" content="yes" /> 
