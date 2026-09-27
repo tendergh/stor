@@ -27,7 +27,7 @@ function getSiteConfig() {
     return { site: `https://${owner}.github.io`, base: '/'}
   }
 
-  return { site: `https://${owner}.github.io/${repo}`, base: `/${repo}/` };
+  return { site: `https://${owner}.github.io/${repo}/`, base: `/${repo}/` };
 }
 const { site, base } = getSiteConfig();
 
