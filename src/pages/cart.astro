@@ -236,15 +236,18 @@ checkoutForm?.addEventListener("submit", async (event) => {
     address: String(formData.get("address") || "").trim(),
   };
 
+  const prods = getCart();
+  const odr = prods.map((e)=>{return {
+    sku: e.id,
+    qte: e.quantity,
+    prix: e.price
+  }});
   const clientData = {
-    ...client,
-    items: order.items,
-    subtotal: order.subtotal,
-    shipping: order.shipping,
-    total: order.total,
-    currency: "USD",
-    source: window.location.origin,
-    createdAt: new Date().toISOString(),
+    store_phone: client.phone,
+    order_id: '001',
+    customer_name: client.name,
+    adresse: client.address,
+    details: odr
   };
 
   if (checkoutSubmit) checkoutSubmit.disabled = true;
