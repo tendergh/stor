@@ -1,6 +1,7 @@
 export const info = {
       name: "CAMERA",
       phone: "212641550703",
+      mail: "tender@pro-max.org",
       media: "https://youtube.com/@developper",
       description: "A curated selection of high-quality products across various categories.",
     }
