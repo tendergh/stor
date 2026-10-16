@@ -243,9 +243,9 @@ checkoutForm?.addEventListener("submit", async (event) => {
     prix: e.price
   }});
   const clientData = {
-    store_phone: client.phone,
+    store_phone: info.phone,
     order_id: '001',
-    customer_name: client.name,
+    customer_name: `${client.name} - ${info.phone}`,
     adresse: client.address,
     details: odr
   };
