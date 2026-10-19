@@ -85,45 +85,6 @@ import { info } from "../data/products";
     </div>
   </div>
 </nav>
-
-
-<!-- <script>
-  const searchButton = document.getElementById("mobile-search-button");
-  const searchPanel = document.getElementById("mobile-search");
-
-  searchButton?.addEventListener("click", () => {
-    const isHidden = searchPanel?.classList.contains("hidden");
-
-    searchPanel?.classList.toggle("hidden");
-
-    searchButton.setAttribute( "aria-expanded", String(isHidden) );
-
-    if (isHidden) {
-      document.getElementById("mobile-search-input")?.focus();
-    }
-  });
-
-
-  const menuButton = document.getElementById("mobile-menu-button");
-  const menu = document.getElementById("mobile-menu");
-
-  menuButton?.addEventListener("click", () => {
-    const isHidden = menu?.classList.contains("hidden");
-
-    menu?.classList.toggle("hidden");
-
-    menuButton.setAttribute( "aria-expanded", String(isHidden) );
-  });
-
-  function getCart():any[]{
-    try { return JSON.parse(localStorage.getItem("shop_cart") || "[]"); } 
-    catch { return []; }
-  }
-
-  const iCount = document.getElementById("itemsCount")
-  iCount && (iCount.innerText = getCart().length.toString());
-</script> -->
-
 <script> 
   const searchButton = document.getElementById("mobile-search-button"); 
   const searchPanel = document.getElementById("mobile-search"); 
