@@ -1,5 +1,5 @@
 export const info = {
-      name: "CAMERA",
+      name: "TENDER",
       phone: "212641550703",
       mail: "tender@pro-max.org",
       media: "https://www.youtube.com/developper,https://x.com/kifachndir,https://www.facebook.com/profile.php?id=61589755520168,https://github.com/balkhirihamid,https://www.tiktok.com/@nextjs66",
